@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS를 써보자!</title>
+  <style>
+    /* 클래스 이름 앞에는 .을 찍는다. */
+    .wrap {
+      width: 50%;
+    }
+
+    /* 특정 태그를 지칭할 때 */
+    div {
+      color: skyblue;
+    }
+
+    /* 자식 선택자는 > 뒤에 적는다 */
+    /* 즉, 아래는 'div-1'이라는 아이디를 갖는 요소 바로 안의 'h5'태그를 선택한 것이다 */
+    #div-1 > h5 {
+      font-weight: bold;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    div > div > div {
+      background-color: red;
+    }
+
+    .small-div {
+      width: 200px;
+    }
+
+    .green-text {
+      color: green;
+    }
+
+    /* 아이디 앞에는 #을 붙인다 */
+    #my-h3 {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>1번 h1</h1>
+  <div class="wrap">
+    <div>
+      <h3>1번 h3 빨주노초 암 어 레전드 타노스 푸르뎅뎅 녹색빛깔 내게 밝혀줘 그린 라이트 아이 라이크 .... 유!!!</h3>
+      <div id="div-1">
+        <h3 id="my-h3" class="italic-text">2번 h3</h3>
+        <h5>1번 h5</h5>
+        <h5 class="italic-text green-text">2번 h5</h5>
+      </div>
+      <div class="small-div">
+        <h3>3번 h3</h3>
+        <h5>3번 h5</h5>
+    </div>
+    <h5>4번 h5</h5>
+  </div>
+  <h5>5번 h5</h5>
+</body>
+</html>
